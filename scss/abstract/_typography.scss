@@ -1,0 +1,71 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+ // HERO SECTION
+
+ .hero{
+    &__navigation{
+        text-transform: uppercase;
+
+        &-list{
+        display: flex;
+        list-style: none;
+        max-width: 30vw;
+        margin: auto;
+        justify-content: space-around;
+        font-size: 1.6rem;
+
+        @include respond(tab-port){
+            max-width: 50%;
+        }
+
+        @include respond(phone){
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 100%;
+            padding: 0 10px;
+        }
+    }
+    &-item{
+    color: white;
+
+    &:hover {                    
+            background-color: black;
+    }
+    }
+
+}
+   
+   &__text{
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+   }
+}
+
+.heading__primary{
+    font-size: 5rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+
+    @include respond(phone){
+     font-size: 3rem;
+    }
+}
+
+.heading__secondary{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.heading__tertiary{
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+.text{
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 55%;
+    // color: $text;s
+    margin: auto;
+}

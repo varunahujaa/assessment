@@ -1,0 +1,15 @@
+.header{
+
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    @include respond(phone){
+        justify-content: space-between;
+    }
+
+    &__img{
+        @include respond(phone){
+            max-width: 25%;
+        }
+    }
+}

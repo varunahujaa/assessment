@@ -1,0 +1,49 @@
+.feature{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    &-img{
+        max-width: 30%;
+        position: relative;
+        // &::before{
+        //     background: url("/img/feature/feature-before.svg");
+        //     background-position: center;
+        //     background-size: cover;
+        //     position: absolute;
+        //     top: 90px ;
+        //     right: 20px;
+        // }
+    }
+
+    // &__data{
+    //     max-width: 40%;
+    // }
+
+    &-heading{
+        text-align: left;
+    }
+
+    &__text{
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+    }
+
+    &__list{
+        list-style: none;
+        &-item{
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+.publisher{
+    background-color: $blue-background;
+    &__carts{
+        display: flex;
+    }
+
+    &__cart{
+
+    }
+}

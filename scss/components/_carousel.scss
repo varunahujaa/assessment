@@ -1,0 +1,49 @@
+.carousel {
+    width: 90%;
+    overflow-x: scroll;
+    display: flex;
+    gap: 2.4rem;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  
+    @media (max-width: $bp-small) {
+      width: 40%;
+    }
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    &__btn {
+      position: absolute;
+      background: none;
+  
+      &--left {
+        left: 10%;
+        top: 40%;
+  
+        @media (max-width: $bp-small) {
+          left: 20%;
+        }
+      }
+      &--right {
+        top: 40%;
+        right: 10%;
+  
+        @media (max-width: $bp-small) {
+          right: 20%;
+        }
+      }
+    }
+  
+    &__img {
+      @media (max-width: $bp-medium) {
+        width: 50%;
+      }
+      @media (max-width: $bp-small) {
+        width: 50%;
+      }
+    }
+  }
+  

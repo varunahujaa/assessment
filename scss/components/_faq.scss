@@ -1,0 +1,158 @@
+.faq {
+    // background-color: azure;
+    box-shadow: 0 2rem 4rem rgba(#000, 0.1);
+    margin: 5rem 10rem;
+    border-radius: 1rem;
+    z-index: 1;
+  
+    background-color: $color-white;
+  
+    @media (max-width: $bp-medium) {
+      margin: 5rem;
+    }
+  
+    &__bg {
+      &-img {
+        position: absolute;
+        z-index: -10;
+        &--1 {
+          height: 97%;
+          min-width: 100%;
+  
+          @media (max-width: $bp-medium) {
+            width: auto;
+            height: 100%;
+          }
+        }
+  
+        &--2 {
+          // height: 30rem;
+          right: 4%;
+          // top: 15%;
+  
+          @media (max-width: $bp-medium) {
+            height: 20rem;
+            right: 3%;
+            top: 18%;
+          }
+          @media (max-width: $bp-small) {
+            right: 3%;
+            top: 22%;
+          }
+          @media (max-width: $bp-smallest) {
+            height: 15rem;
+            right: 3%;
+            top: 30%;
+          }
+        }
+      }
+    }
+    &__box {
+      display: flex;
+      gap: 4rem;
+      border-radius: 1rem 1rem 0 0;
+      padding: 4rem 3rem;
+      align-items: center;
+  
+      border-bottom: 1px solid $color-grey-2;
+  
+      &:last-child {
+        border-bottom: none;
+      }
+  
+      @media (max-width: $bp-smallest) {
+        padding: 2rem 1.6rem;
+        gap: 1.4rem;
+      }
+    }
+  
+    &__heading-box {
+      width: 50%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+  
+      @media (max-width: $bp-medium) {
+        width: 75%;
+      }
+    }
+    &__text {
+      text-align: center;
+      font-size: 1.2rem;
+      color: $grey-dark;
+    }
+  
+    &__button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    &__icon {
+    //   color: $color-primary;
+      font-size: 2.2rem;
+  
+      &--open {
+        display: block;
+      }
+      &--close {
+        display: none !important;
+      }
+    }
+  
+    &__button-box {
+      align-self: self-start;
+      display: flex;
+      flex-direction: column;
+    }
+    &__query-box {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &__question {
+      font-size: 1.8rem;
+      color: $grey-dark-2;
+      font-weight: 500;
+  
+      @media (max-width: $bp-small) {
+        font-size: 1.4rem;
+      }
+  
+      @media (max-width: $bp-mini) {
+        font-size: 1.3rem;
+      }
+    }
+    &__ans {
+      font-size: 1.4rem;
+    //   color: $grey-light;
+      transition: all linear 0.3s;
+  
+      @media (max-width: $bp-small) {
+        font-size: 1.1rem;
+      }
+      @media (max-width: $bp-mini) {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  // .hidden .faq__button[name="open"] {
+  //   display: none;
+  // }
+  // .hidden .faq__button[name="close"] {
+  //   display: block;
+  // }
+  
+  .hidden .faq__icon--open {
+    display: none !important;
+    // opacity: 0;
+    // visibility: hidden;
+  }
+  .hidden .faq__icon--close {
+    display: block !important;
+  }
+  
